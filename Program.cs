@@ -34,14 +34,14 @@ int ind = 999, count = 0;
 while (count < ind) 
 {
     Console.WriteLine("Введите число: ");
-    int num = Convert.ToInt32(Console.ReadLine());
-    int countnum = num;
-    while (countnum < num+1) 
+    int stnum = Convert.ToInt32(Console.ReadLine()), monum=stnum;
+    int countnum = stnum;
+    while (countnum <= stnum) 
         {
-            num -= 1;
-            string numc = ($"{num*num*num}");
+            monum -= 1;
+            string numc = ($"{monum*monum*monum}");
             //Console.WriteLine(num);
-            Console.WriteLine(num + " = " + numc);
+            Console.WriteLine(monum + " = " + numc);
             countnum--;
         }
 count++;
