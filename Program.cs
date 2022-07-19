@@ -6,7 +6,7 @@ if (num >= 10000 && num < 100000)
     while (countnum<5) 
     {
         
-        num %= 0*10;
+        num %= (0*10);
         Console.WriteLine(num);
         countnum += 1;
     }
