@@ -7,23 +7,42 @@
 // }
 // Zadacha19();
 
-void Zadacha21 () {
-int ind = 999, count = 0;
-while(ind > count) 
+// void Zadacha21 () {
+// int ind = 999, count = 0;
+// while(ind > count) 
+// {
+//     double dist;
+//     Console.WriteLine("Введите координаты x, y, z точки A: ");
+//     int xA = Convert.ToInt32(Console.ReadLine()),
+//     yA = Convert.ToInt32(Console.ReadLine()),
+//     zA = Convert.ToInt32(Console.ReadLine());
+//     Console.WriteLine("Введите координаты x, y, z точки B: ");
+//     int xB = Convert.ToInt32(Console.ReadLine()),
+//     yB = Convert.ToInt32(Console.ReadLine()),
+//     zB = Convert.ToInt32(Console.ReadLine());
+//     dist = Math.Sqrt(Math.Pow(xB-xA, 2)+ Math.Pow(yB-yA, 2)+ Math.Pow(zB-zA, 2));
+//     dist = Math.Round(dist, 2); //округление, где число после запятой - колво значений
+//     Console.WriteLine(dist);
+// }
+// count++;
+// }
+// Zadacha21();
+
+void Zadacha23()
 {
-    double dist;
-    Console.WriteLine("Введите координаты x, y, z точки A: ");
-    int xA = Convert.ToInt32(Console.ReadLine()),
-    yA = Convert.ToInt32(Console.ReadLine()),
-    zA = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите координаты x, y, z точки B: ");
-    int xB = Convert.ToInt32(Console.ReadLine()),
-    yB = Convert.ToInt32(Console.ReadLine()),
-    zB = Convert.ToInt32(Console.ReadLine());
-    dist = Math.Sqrt(Math.Pow(xB-xA, 2)+ Math.Pow(yB-yA, 2)+ Math.Pow(zB-zA, 2));
-    dist = Math.Round(dist, 2);
-    Console.WriteLine(dist);
-}
+int ind = 999, count = 0;
+while (count < ind) 
+{
+    int countnum = 0;
+    Console.WriteLine("Введите число: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    while (countnum < num) 
+        {
+            num -= 1;
+            Console.WriteLine(num);
+            countnum++;
+        }
 count++;
 }
-Zadacha21();
+}
+Zadacha23();
