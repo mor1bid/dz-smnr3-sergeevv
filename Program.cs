@@ -39,8 +39,8 @@ while (count < ind)
     while (countnum < num) 
         {
             countnum += 1;
-            string numc = ($"{num*num*num}");
-            Console.WriteLine(num + " = " + numc);
+            string numc = ($"{countnum*countnum*countnum}");
+            Console.WriteLine(countnum + " = " + numc);
         }
 count++;
 }
