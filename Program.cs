@@ -1,17 +1,16 @@
-﻿static void Main(string[] args)
+﻿static void Zadacha19(string[] args)
         {
-            Console.WriteLine("Число");
-            string s = Console.ReadLine();
-            char[] str = s.ToCharArray();;
-            string a;
-            for (int i = str.Length-1; i > -1; --i) 
-            {
-                a = Convert.ToString(str[i]);
-                Console.Write(a);
-            }
-            Console.ReadKey();
+        int reverse=0;
+        int number = 12823;
+
+        while (number > 0)
+        {
+            reverse = number % 10;
+            Console.Write(reverse);
+            number = number / 10;  
         }
-Main(args);
+        }
+Zadacha19(args);
 // if (num >= 10000 && num < 100000)
 // {
 //     while (countnum<5) 
