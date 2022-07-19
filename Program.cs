@@ -6,6 +6,7 @@ if (num >= 10000 && num < 100000)
     while (countnum<5) 
     {
         num %= cut;
+        num /= cut;
         Console.WriteLine(num);
         cut *= 10;
         countnum += 1;
