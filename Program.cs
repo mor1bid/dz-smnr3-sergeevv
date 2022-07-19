@@ -35,7 +35,7 @@ while (count < ind)
 {
     Console.WriteLine("Введите число: ");
     int num = Convert.ToInt32(Console.ReadLine());
-    int countnum = 1;
+    int countnum = num;
     while (countnum <= num) 
         {
             num -= 1;
