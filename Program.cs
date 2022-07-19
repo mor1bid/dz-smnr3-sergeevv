@@ -1,11 +1,20 @@
-﻿// void Zadacha19 () {
-// Console.WriteLine("Введите число:");
-// int num = Convert.ToInt32(Console.ReadLine.Next());
-// if (num >= 10000 && num <= 9999) 
-// num %= 10;
-
-// }
-// Zadacha19();
+﻿void Zadacha19 () {
+Console.WriteLine("Введите число:");
+int num = Convert.ToInt32(Console.ReadLine()), countnum = 0;
+if (num <= 10000 && num > 100000) 
+{
+    while (countnum<5) 
+    {
+        num /= 10;
+        Console.WriteLine(num);
+        countnum += 1;
+    }
+} else 
+{
+    Console.WriteLine ("Задано не пятизначное число.");
+}
+}
+Zadacha19();
 
 // void Zadacha21 () {
 // int ind = 999, count = 0;
@@ -28,21 +37,21 @@
 // }
 // Zadacha21();
 
-void Zadacha23()
-{
-int ind = 999, count = 0;
-while (count < ind) 
-{
-    Console.WriteLine("Введите число: ");
-    int num = Convert.ToInt32(Console.ReadLine());
-    int countnum = 0;
-    while (countnum < num) 
-        {
-            countnum += 1;
-            string numc = ($"{countnum*countnum*countnum}");
-            Console.WriteLine(countnum + "^3 = " + numc);
-        }
-count++;
-}
-}
-Zadacha23();
+// void Zadacha23()
+// {
+// int ind = 999, count = 0;
+// while (count < ind) 
+// {
+//     Console.WriteLine("Введите число: ");
+//     int num = Convert.ToInt32(Console.ReadLine());
+//     int countnum = 0;
+//     while (countnum < num) 
+//         {
+//             countnum += 1;
+//             string numc = ($"{countnum*countnum*countnum}");
+//             Console.WriteLine(countnum + "^3 = " + numc);
+//         }
+// count++;
+// }
+// }
+// Zadacha23();
