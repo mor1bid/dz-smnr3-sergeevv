@@ -38,11 +38,11 @@ while (count < ind)
     int countnum = 1;
     while (countnum <= num) 
         {
-            //num -= 1;
+            num -= 1;
             string numc = ($"{num*num*num}");
             //Console.WriteLine(num);
             Console.WriteLine(num + " = " + numc);
-            countnum++;
+            countnum--;
         }
 count++;
 }
