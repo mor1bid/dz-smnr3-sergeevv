@@ -21,6 +21,7 @@ while(ind > count)
     yB = Convert.ToInt32(Console.ReadLine()),
     zB = Convert.ToInt32(Console.ReadLine());
     dist = Math.Sqrt(Math.Pow(xB-xA, 2)+ Math.Pow(yB-yA, 2)+ Math.Pow(zB-zA, 2));
+    dist = Math.Round(dist, 2);
     Console.WriteLine(dist);
 }
 count++;
