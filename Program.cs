@@ -35,12 +35,12 @@ while (count < ind)
 {
     Console.WriteLine("Введите число: ");
     int num = Convert.ToInt32(Console.ReadLine());
-    int countnum = num-num;
+    int countnum = 0;
     while (countnum < num) 
         {
             countnum += 1;
             string numc = ($"{countnum*countnum*countnum}");
-            Console.WriteLine(countnum + " = " + numc);
+            Console.WriteLine(countnum + "^3 = " + numc);
         }
 count++;
 }
