@@ -1,9 +1,18 @@
-﻿void Zadacha19 () {
-Console.WriteLine("Введите число:");
-string num = Console.ReadLine();
-string [] res = num.Split();
-Console.WriteLine(res);
-// if (num >= 10000 && num < 100000) 
+﻿static void Main(string[] args)
+        {
+            Console.WriteLine("Число");
+            string s = Console.ReadLine();
+            char[] str = s.ToCharArray();;
+            string a;
+            for (int i = str.Length-1; i > -1; --i) 
+            {
+                a = Convert.ToString(str[i]);
+                Console.Write(a);
+            }
+            Console.ReadKey();
+        }
+Main(args);
+// if (num >= 10000 && num < 100000)
 // {
 //     while (countnum<5) 
 //     {
@@ -13,8 +22,8 @@ Console.WriteLine(res);
 // {
 //     Console.WriteLine ("Задано не пятизначное число.");
 // }
-}
-Zadacha19();
+// }
+// Zadacha19();
 
 // void Zadacha21 () {
 // int ind = 999, count = 0;
