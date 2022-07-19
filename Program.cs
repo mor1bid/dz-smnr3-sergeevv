@@ -7,7 +7,7 @@
         {
             reverse = number % 10;
             Console.Write(reverse);
-            number = number / 10;  
+            //number = number / 10;  
         }
         }
 Zadacha19(args);
