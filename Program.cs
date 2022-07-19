@@ -39,7 +39,7 @@ while (count < ind)
     while (countnum < num) 
         {
             countnum += 1;
-            string numc = ($"{countnum*countnum*countnum}");
+            string numc = ($"{countnum^3}");
             Console.WriteLine(countnum + "^3 = " + numc);
         }
 count++;
