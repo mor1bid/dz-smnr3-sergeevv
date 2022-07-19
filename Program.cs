@@ -1,7 +1,7 @@
 ﻿void Zadacha19 () {
 Console.WriteLine("Введите число:");
 int num = Convert.ToInt32(Console.ReadLine()), countnum = 0;
-if (num <= 10000 && num < 100000) 
+if (num >= 10000 && num < 100000) 
 {
     while (countnum<5) 
     {
