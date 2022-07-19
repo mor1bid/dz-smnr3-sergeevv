@@ -1,21 +1,18 @@
 ﻿void Zadacha19 () {
 Console.WriteLine("Введите число:");
-int num = Convert.ToInt32(Console.ReadLine()), countnum = 0, cut = 10;
-if (num >= 10000 && num < 100000) 
-{
-    while (countnum<5) 
-    {
-        double res = num / cut;
-        res = num % cut;
-        res = Math.Round(res, 0);
-        Console.WriteLine(res);
-        cut *= 10;
-        countnum += 1;
-    }
-} else 
-{
-    Console.WriteLine ("Задано не пятизначное число.");
-}
+string num = Console.ReadLine();
+string [] res = num.Split();
+Console.WriteLine(res);
+// if (num >= 10000 && num < 100000) 
+// {
+//     while (countnum<5) 
+//     {
+        
+//     }
+// } else 
+// {
+//     Console.WriteLine ("Задано не пятизначное число.");
+// }
 }
 Zadacha19();
 
