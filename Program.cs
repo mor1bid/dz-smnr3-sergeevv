@@ -33,14 +33,14 @@ void Zadacha23()
 int ind = 999, count = 0;
 while (count < ind) 
 {
-    int countnum = 0;
     Console.WriteLine("Введите число: ");
     int num = Convert.ToInt32(Console.ReadLine());
-    while (countnum < num) 
+    int countnum = num;
+    while (countnum >= 0) 
         {
             num -= 1;
             Console.WriteLine(num);
-            countnum++;
+            countnum--;
         }
 count++;
 }
