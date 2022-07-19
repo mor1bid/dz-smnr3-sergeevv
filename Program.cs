@@ -18,7 +18,7 @@ int xB = Convert.ToInt32(Console.ReadLine()),
 yB = Convert.ToInt32(Console.ReadLine()),
 zB = Convert.ToInt32(Console.ReadLine());
 
-dist = (xB-xA)^2+(yB-yA)^2+(zB-zA)^2;
+dist = Math.Sqrt(Math.Pow(xB-xA, 2)+ Math.Pow(yB-yA, 2)+ Math.Pow(zB-zA, 2));
 Console.WriteLine(dist);
 }
 Zadacha21();
