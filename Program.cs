@@ -36,10 +36,12 @@ while (count < ind)
     Console.WriteLine("Введите число: ");
     int num = Convert.ToInt32(Console.ReadLine());
     int countnum = num;
-    while (countnum >= 0) 
+    while (countnum > 0) 
         {
             num -= 1;
-            Console.WriteLine(num);
+            string numc = ($"{num}*{num}*{num}");
+            //Console.WriteLine(num);
+            Console.WriteLine(numc);
             countnum--;
         }
 count++;
