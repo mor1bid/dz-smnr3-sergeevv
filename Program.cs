@@ -8,7 +8,7 @@
 // Zadacha19();
 
 void Zadacha21 () {
-int dist;
+double dist;
 Console.WriteLine("Введите координаты x, y, z точки A: ");
 int xA = Convert.ToInt32(Console.ReadLine()),
 yA = Convert.ToInt32(Console.ReadLine()),
@@ -18,7 +18,7 @@ int xB = Convert.ToInt32(Console.ReadLine()),
 yB = Convert.ToInt32(Console.ReadLine()),
 zB = Convert.ToInt32(Console.ReadLine());
 
-dist = (xA-xB)^2+(yA-yB)^2+(zA-zB)^2;
+dist = (xB-xA)^2+(yB-yA)^2+(zB-zA)^2;
 Console.WriteLine(dist);
 }
 Zadacha21();
