@@ -7,7 +7,7 @@ if (num >= 10000 && num < 100000)
     {
         double res = num / cut;
         res = num % cut;
-        res = Math.Round(res, 1);
+        res = Math.Round(res, 0);
         Console.WriteLine(res);
         cut *= 10;
         countnum += 1;
