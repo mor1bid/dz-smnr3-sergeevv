@@ -5,8 +5,8 @@ if (num >= 10000 && num < 100000)
 {
     while (countnum<5) 
     {
-        //num /= cut;
         int res = num % cut;
+        res = num / cut;
         Console.WriteLine(res);
         cut *= 10;
         countnum += 1;
