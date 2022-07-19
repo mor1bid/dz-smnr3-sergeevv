@@ -35,14 +35,14 @@ while (count < ind)
 {
     Console.WriteLine("Введите число: ");
     int num = Convert.ToInt32(Console.ReadLine());
-    int countnum = num;
-    while (countnum <= num) 
+    int countnum = 0;
+    while (num > 0) 
         {
             num -= 1;
             string numc = ($"{num*num*num}");
             //Console.WriteLine(num);
             Console.WriteLine(num + " = " + numc);
-            countnum--;
+            countnum++;
         }
 count++;
 }
