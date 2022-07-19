@@ -1,13 +1,13 @@
 ﻿void Zadacha19 () {
 Console.WriteLine("Введите число:");
-int num = Convert.ToInt32(Console.ReadLine()), countnum = 0;
+int num = Convert.ToInt32(Console.ReadLine()), countnum = 0, cut = 10;
 if (num >= 10000 && num < 100000) 
 {
     while (countnum<5) 
     {
-        
-        num %= (0*10);
+        num %= cut;
         Console.WriteLine(num);
+        cut = 10*10;
         countnum += 1;
     }
 } else 
