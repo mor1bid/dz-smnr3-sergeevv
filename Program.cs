@@ -1,16 +1,17 @@
-﻿// static void Zadacha19(string[] args)
-//         {
-//         int reverse=0;
-//         int number = 12823;
+﻿ static void Zadacha19(string[] args)
+         {
+         int reverse=0;
+         int number = new Random().Next(10000, 99999);
 
-//         while (number > 0)
-//         {
-//             reverse = number % 10;
-//             Console.Write(reverse);
-//             number = number / 10;  
-//         }
-//         }
-// Zadacha19(args);
+         while (number > 0)
+         {
+             reverse = number % 10;
+             Console.Write(reverse);
+             number = number / 10;  
+         }
+         }
+Zadacha19(args);
+
 // // if (num >= 10000 && num < 100000)
 // // {
 // //     while (countnum<5) 
