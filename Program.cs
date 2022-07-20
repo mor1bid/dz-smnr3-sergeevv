@@ -1,8 +1,10 @@
 ﻿ static void Zadacha19(string[] args)
          {
+        Console.WriteLine("Zadacha19");
          int reverse1=0, reverse2=0;
          //int number = new Random().Next(10000, 99999);
-         int num = 13821;
+         Console.WriteLine("Введите число: ");
+         int num = Convert.ToInt32(Console.ReadLine());
          Console.WriteLine(num);
          int amun = num;
          while (amun > 0)
