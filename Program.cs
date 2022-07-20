@@ -2,13 +2,14 @@
          {
          int reverse=0;
          int number = new Random().Next(10000, 99999);
-
+         Console.WriteLine(number);
          while (number > 0)
          {
              reverse = number % 10;
              Console.Write(reverse);
              number = number / 10;  
          }
+         Console.WriteLine("");
          }
 Zadacha19(args);
 
