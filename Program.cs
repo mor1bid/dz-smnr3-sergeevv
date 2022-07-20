@@ -16,14 +16,13 @@
          int bmun = reverse2;
          while (bmun >= reverse1)
          {
-             reverse2 = bmun % 100;
+             reverse2 = bmun % 1000;
              //Console.Write(reverse2);
-             bmun = bmun / 10;
-             Console.WriteLine(bmun);
+             bmun = bmun / 1000;
          }
 
          Console.WriteLine("");
-         if (reverse1 == num % 10 && reverse2 == (num % 100)) 
+         if (reverse1 == num % 10 && reverse2 == (num % 1000)/1000) 
          {
             Console.WriteLine("Число " + num + " - палиндром");
          } 
