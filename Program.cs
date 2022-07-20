@@ -12,11 +12,11 @@
              amun = amun / 10;
          }
          int bmun = reverse2;
-         while (bmun < reverse1)
+         while (bmun > reverse1)
          {
-             reverse2 = bmun % 10;
+             reverse2 = bmun % 100;
              //Console.Write(reverse2);
-             bmun = bmun / 10;
+             bmun = bmun / 100;
          }
 
          Console.WriteLine("");
