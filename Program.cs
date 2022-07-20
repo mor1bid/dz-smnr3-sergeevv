@@ -7,30 +7,37 @@
          int num = Convert.ToInt32(Console.ReadLine());
          //Console.WriteLine(num);
          int amun = num;
+         if (num >= 10000 && num < 100000) 
+         {
          while (amun > 0)
-         {
-             reverse1 = amun % 10;
-             Console.Write(reverse1);
-             amun = amun / 10;
-         }
-         int bmun = reverse2;
-         while (bmun >= reverse1)
-         {
-             reverse2 = bmun % 1000;
-             //Console.Write(reverse2);
-             bmun = bmun / 1000;
-         }
+            {
+                reverse1 = amun % 10;
+                Console.Write(reverse1);
+                amun = amun / 10;
+            }
+            int bmun = reverse2;
+            while (bmun >= reverse1)
+                {
+                    reverse2 = bmun % 1000;
+                    bmun = bmun / 1000;
+                }
+         
+            Console.WriteLine("");
+            if (reverse1 == num % 10 && reverse2 == (num % 100)/10) 
+            {
+                Console.WriteLine("Число " + num + " - палиндром");
+            } 
+            else 
+            {
+                Console.WriteLine("Число " + num + " - не палиндром");
+            }
+            Console.WriteLine("");
+        }
+        else 
+        {
+        Console.WriteLine ("Задано не пятизначное число."); 
+        }
 
-         Console.WriteLine("");
-         if (reverse1 == num % 10 && reverse2 == (num % 100)/10) 
-         {
-            Console.WriteLine("Число " + num + " - палиндром");
-         } 
-         else 
-         {
-            Console.WriteLine("Число " + num + " - не палиндром");
-         }
-         Console.WriteLine("");
          }
 Console.WriteLine("");
 Zadacha19(args);
