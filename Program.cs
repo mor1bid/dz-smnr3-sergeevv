@@ -42,21 +42,8 @@
 Console.WriteLine("");
 Zadacha19(args);
 
-// // if (num >= 10000 && num < 100000)
-// // {
-// //     while (countnum<5) 
-// //     {
-        
-// //     }
-// // } else 
-// // {
-// //     Console.WriteLine ("Задано не пятизначное число.");
-// // }
-// // }
-// Zadacha19();
-
- void Zadacha21 () 
- {
+void Zadacha21 () 
+{
     Console.WriteLine("Zadacha21");
      double dist;
      //Console.WriteLine("Введите координаты x, y, z точки A: ");
@@ -71,8 +58,8 @@ Zadacha19(args);
      dist = Math.Round(dist, 2); //округление, где число после запятой - колво значений
      Console.WriteLine("Расстояние между точкой A " + "(" + xA + " , " + yA + " , " + zA + ")" + " и точкой B " + "(" + xB + " , " + yB + " , " + zB + ")" + " = " + dist);
      Console.WriteLine("");
- }
- Zadacha21();
+}
+Zadacha21();
 
 void Zadacha23()
 {
