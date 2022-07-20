@@ -1,16 +1,27 @@
 ﻿ static void Zadacha19(string[] args)
          {
          int reverse=0;
-         int number = new Random().Next(10000, 99999);
-         Console.WriteLine(number);
-         while (number > 0)
+         //int number = new Random().Next(10000, 99999);
+         int num = 12821;
+         Console.WriteLine(num);
+         while (num > 0)
          {
-             reverse = number % 10;
+             int mun = num;
+             reverse = mun % 10;
              Console.Write(reverse);
-             number = number / 10;  
+             mun /= 10;  
          }
-         Console.WriteLine(" ");
+         if (reverse == num) 
+         {
+            Console.WriteLine("Число " + num + " - палиндром");
+         } 
+         else 
+         {
+            Console.WriteLine("Число " + num + " - не палиндром");
          }
+         //Console.WriteLine("");
+         }
+Console.WriteLine("");
 Zadacha19(args);
 
 // // if (num >= 10000 && num < 100000)
