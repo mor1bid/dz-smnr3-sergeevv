@@ -6,10 +6,10 @@
          Console.WriteLine(num);
          while (num > 0)
          {
-             int mun = num;
-             reverse = mun % 10;
+             //int mun = num;
+             reverse = num % 10;
              Console.Write(reverse);
-             mun = num / 10;
+             num = num / 10;
          }
          if (reverse == num) 
          {
