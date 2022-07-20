@@ -28,13 +28,13 @@
  {
      double dist;
      Console.WriteLine("Введите координаты x, y, z точки A: ");
-     double xA = double.PositiveInfinity,
-     yA = double.PositiveInfinity,
-     zA = double.PositiveInfinity;
+     int xA = new Random().Next(1, 10),
+     yA = new Random().Next(1, 10),
+     zA = new Random().Next(1, 10);
      Console.WriteLine("Введите координаты x, y, z точки B: ");
-     double xB = double.PositiveInfinity,
-     yB = double.PositiveInfinity,
-     zB = double.PositiveInfinity;
+     int xB = new Random().Next(1, 10),
+     yB = new Random().Next(1, 10),
+     zB = new Random().Next(1, 10);
      dist = Math.Sqrt(Math.Pow(xB-xA, 2)+ Math.Pow(yB-yA, 2)+ Math.Pow(zB-zA, 2));
      dist = Math.Round(dist, 2); //округление, где число после запятой - колво значений
      Console.WriteLine(dist);
@@ -44,7 +44,7 @@
 
 void Zadacha23()
 {
-     double num = double.PositiveInfinity+1;
+     double num = new Random().Next(1, 10);
      int countnum = 0;
      while (countnum < num) 
          {
