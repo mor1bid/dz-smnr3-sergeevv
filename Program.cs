@@ -9,9 +9,9 @@
          {
              reverse = mun % 10;
              Console.Write(reverse);
-             Console.WriteLine();
              mun = mun / 10;
          }
+         Console.WriteLine("");
          if (reverse == (num % 10)) 
          {
             Console.WriteLine("Число " + num + " - палиндром");
