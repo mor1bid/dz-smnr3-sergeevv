@@ -15,7 +15,7 @@
          while (bmun < reverse1)
          {
              reverse2 = bmun % 10;
-             Console.Write(reverse2);
+             //Console.Write(reverse2);
              bmun = bmun / 10;
          }
 
