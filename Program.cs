@@ -16,11 +16,11 @@
          {
              reverse2 = bmun % 100;
              //Console.Write(reverse2);
-             bmun = bmun / 100;
+             bmun = bmun / 10;
          }
 
          Console.WriteLine("");
-         if (reverse1 == num % 10 && reverse2 == (num % 100)/100) 
+         if (reverse1 == num % 10 && reverse2 == (num % 100)/10) 
          {
             Console.WriteLine("Число " + num + " - палиндром");
          } 
