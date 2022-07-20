@@ -1,5 +1,5 @@
 ﻿ static void Zadacha19(string[] args)
-         {
+    {
         Console.WriteLine("Zadacha19");
          int reverse1=0, reverse2=0;
          //int number = new Random().Next(10000, 99999);
@@ -37,8 +37,8 @@
         {
         Console.WriteLine ("Задано не пятизначное число."); 
         }
-
-         }
+        Console.WriteLine("");
+    }
 Console.WriteLine("");
 Zadacha19(args);
 
