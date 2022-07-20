@@ -16,11 +16,8 @@
                 amun = amun / 10;
             }
             int bmun = reverse2;
-            while (bmun >= reverse1)
-                {
-                    reverse2 = bmun % 1000;
-                    bmun = bmun / 1000;
-                }
+            reverse2 = bmun % 1000;
+            bmun = bmun / 1000;
          
             Console.WriteLine("");
             if (reverse1 == num % 10 && reverse2 == (num % 100)/10) 
