@@ -9,7 +9,7 @@
              Console.Write(reverse);
              number = number / 10;  
          }
-         Console.WriteLine("");
+         Console.WriteLine(" ");
          }
 Zadacha19(args);
 
