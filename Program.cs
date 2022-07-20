@@ -8,10 +8,11 @@
          while (mun > 0)
          {
              reverse = mun % 10;
-             Console.WriteLine(reverse);
+             Console.Write(reverse);
+             Console.WriteLine();
              mun = mun / 10;
          }
-         if (reverse == num) 
+         if (reverse == (num % 10)) 
          {
             Console.WriteLine("Число " + num + " - палиндром");
          } 
@@ -19,7 +20,7 @@
          {
             Console.WriteLine("Число " + num + " - не палиндром");
          }
-         //Console.WriteLine("");
+         Console.WriteLine("");
          }
 Console.WriteLine("");
 Zadacha19(args);
