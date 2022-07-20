@@ -1,18 +1,26 @@
 ﻿ static void Zadacha19(string[] args)
          {
-         int reverse=0;
+         int reverse1=0, reverse2=0;
          //int number = new Random().Next(10000, 99999);
          int num = 12821;
          Console.WriteLine(num);
-         int mun = num;
-         while (mun > 0)
+         int amun = num;
+         while (amun > 0)
          {
-             reverse = mun % 10;
-             Console.Write(reverse);
-             mun = mun / 10;
+             reverse1 = amun % 10;
+             Console.Write(reverse1);
+             amun = amun / 10;
          }
+         int bmun = reverse2;
+         while (bmun < reverse2)
+         {
+             reverse2 = bmun % 10;
+             Console.Write(reverse2);
+             bmun = bmun / 10;
+         }
+
          Console.WriteLine("");
-         if (reverse == (num % 10)) 
+         if (reverse1 == num % 10 && reverse2 == (num % 100)/100) 
          {
             Console.WriteLine("Число " + num + " - палиндром");
          } 
@@ -40,6 +48,7 @@ Zadacha19(args);
 
  void Zadacha21 () 
  {
+    Console.WriteLine("Zadacha21");
      double dist;
      //Console.WriteLine("Введите координаты x, y, z точки A: ");
      int xA = new Random().Next(1, 10),
@@ -58,6 +67,7 @@ Zadacha19(args);
 
 void Zadacha23()
 {
+    Console.WriteLine("Zadacha23");
      double num = new Random().Next(1, 10);
      int countnum = 0;
      while (countnum < num) 
