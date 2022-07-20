@@ -12,7 +12,7 @@
              amun = amun / 10;
          }
          int bmun = reverse2;
-         while (bmun < reverse2)
+         while (bmun < reverse1)
          {
              reverse2 = bmun % 10;
              Console.Write(reverse2);
