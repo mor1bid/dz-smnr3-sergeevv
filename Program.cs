@@ -4,9 +4,9 @@
          //int number = new Random().Next(10000, 99999);
          int num = 12821;
          Console.WriteLine(num);
-         while (num > 0)
+         int mun = num;
+         while (mun > 0)
          {
-             int mun = num;
              reverse = mun % 10;
              Console.WriteLine(reverse);
              mun = mun / 10;
