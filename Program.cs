@@ -9,7 +9,7 @@
              int mun = num;
              reverse = mun % 10;
              Console.Write(reverse);
-             mun /= 10;  
+             mun = num / 10;
          }
          if (reverse == num) 
          {
