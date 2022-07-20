@@ -27,19 +27,19 @@
  void Zadacha21 () 
  {
      double dist;
-     Console.WriteLine("Введите координаты x, y, z точки A: ");
+     //Console.WriteLine("Введите координаты x, y, z точки A: ");
      int xA = new Random().Next(1, 10),
      yA = new Random().Next(1, 10),
      zA = new Random().Next(1, 10);
-     Console.WriteLine("Введите координаты x, y, z точки B: ");
+     //Console.WriteLine("Введите координаты x, y, z точки B: ");
      int xB = new Random().Next(1, 10),
      yB = new Random().Next(1, 10),
      zB = new Random().Next(1, 10);
      dist = Math.Sqrt(Math.Pow(xB-xA, 2)+ Math.Pow(yB-yA, 2)+ Math.Pow(zB-zA, 2));
      dist = Math.Round(dist, 2); //округление, где число после запятой - колво значений
-     Console.WriteLine(dist);
+     Console.WriteLine("Расстояние между точкой A " + xA, yA, zA + " и точкой B " + xB, yB, zB + " = " + dist);
+     Console.WriteLine("");
  }
- Console.WriteLine("");
  Zadacha21();
 
 void Zadacha23()
