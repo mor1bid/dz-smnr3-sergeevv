@@ -5,7 +5,7 @@
          //int number = new Random().Next(10000, 99999);
          Console.WriteLine("Введите число: ");
          int num = Convert.ToInt32(Console.ReadLine());
-         Console.WriteLine(num);
+         //Console.WriteLine(num);
          int amun = num;
          while (amun > 0)
          {
@@ -14,15 +14,16 @@
              amun = amun / 10;
          }
          int bmun = reverse2;
-         while (bmun > 0)
+         while (bmun >= reverse1)
          {
              reverse2 = bmun % 100;
              //Console.Write(reverse2);
              bmun = bmun / 10;
+             Console.WriteLine(bmun);
          }
 
          Console.WriteLine("");
-         if (reverse1 == num % 10 && reverse2 == (num % 100)/10) 
+         if (reverse1 == num % 10 && reverse2 == (num % 100)) 
          {
             Console.WriteLine("Число " + num + " - палиндром");
          } 
