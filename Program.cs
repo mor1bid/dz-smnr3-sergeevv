@@ -16,7 +16,7 @@
                 amun = amun / 10;
             }
             int bmun = reverse2;
-            reverse2 = bmun % 1000;
+            reverse2 = bmun % 10000;
             bmun = bmun / 1000;
          
             Console.WriteLine("");
