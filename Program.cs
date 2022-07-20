@@ -22,7 +22,7 @@
          }
 
          Console.WriteLine("");
-         if (reverse1 == num % 10 && reverse2 == (num % 10)/10) 
+         if (reverse1 == num % 10 && reverse2 == (num % 100)/10) 
          {
             Console.WriteLine("Число " + num + " - палиндром");
          } 
