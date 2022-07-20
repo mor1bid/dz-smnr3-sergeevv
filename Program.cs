@@ -1,7 +1,7 @@
 ﻿ static void Zadacha19(string[] args)
     {
         Console.WriteLine("Zadacha19");
-         int reverse1=0, reverse2=0;
+         int reverse1=0;
          //int number = new Random().Next(10000, 99999);
          Console.WriteLine("Введите число: ");
          int num = Convert.ToInt32(Console.ReadLine());
@@ -15,9 +15,8 @@
                 Console.Write(reverse1);
                 amun = amun / 10;
             }
-            int bmun = reverse2;
-            reverse2 = bmun % 10000;
-            bmun = bmun / 1000;
+            int bmun = num;
+            bmun=(bmun % 10000) / 1000;
          
             Console.WriteLine("");
             if (reverse1 == num % 10 && bmun == (num % 100)/10) 
